@@ -57,7 +57,7 @@ You can also highlight and replace multiple keywords.
    }).hr();
 </script>
 ```
-[CodePen demo](https://codepen.io/anon/pen/XRdNbw)
+[CodePen Multiple demo](https://codepen.io/anon/pen/XRdNbw)
 
 
 
