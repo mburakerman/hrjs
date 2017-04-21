@@ -95,6 +95,12 @@ These are default options.
 ```
 
 
+## Support
+- IE 11+
+- Chrome 
+- FireFox
+- Safari
+
 
 ## License
 
