@@ -24,6 +24,8 @@ html {
 
 body {
     font-family: 'Nunito', sans-serif;
+    background:#fccb90;
+    background-image: -webkit-linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
     font-size: 100%;
     background-repeat: no-repeat;
