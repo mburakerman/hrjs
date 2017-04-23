@@ -6,11 +6,11 @@
 
 ## Install
 
-Include hr.js file
+Include hr.js file:
 ```html
 <script src="src/hr.js"></script>
 ```
-or use CDN
+or use CDN:
 ```html
 <script src="https://rawgit.com/mburakerman/hrjs/master/src/hr.js"></script>
 ```
@@ -20,20 +20,20 @@ or use CDN
 ## Usage
 
 ```html
- <p id="mytext">Lorem ipsum dolor sit amet.</p>
+<p id="mytext">Lorem ipsum dolor sit amet.</p>
 ```
 Activate
 
-```js
+```html
 <script>
-   new HR("#mytext", {
-     highlight: "dolor",
-     replaceWith: "cat",
-     backgroundColor: "#B4FFEB"
-   }).hr();
+  new HR("#mytext", {
+    highlight: "dolor",
+    replaceWith: "cat",
+    backgroundColor: "#B4FFEB"
+  }).hr();
 </script>
 ```
-Thats it!
+That's it!
 
 [CodePen demo](https://codepen.io/anon/pen/ZKWBYV)
 
@@ -45,16 +45,16 @@ Thats it!
 You can also highlight and replace multiple keywords.
 
 ```html
- <p id="mytext">I love JavaScript.</p>
+<p id="mytext">I love JavaScript.</p>
 ```
 
-```js
+```html
 <script>
-   new HR("#mytext", {
-     highlight: ["love","JavaScript"],
-     replaceWith: ["like", "jQuery"],
-     backgroundColor: "#B4FFEB"
-   }).hr();
+  new HR("#mytext", {
+    highlight: ["love","JavaScript"],
+    replaceWith: ["like", "jQuery"],
+    backgroundColor: "#B4FFEB"
+  }).hr();
 </script>
 ```
 [CodePen Multiple demo](https://codepen.io/anon/pen/XRdNbw)
@@ -66,15 +66,15 @@ You can also highlight and replace multiple keywords.
 To highlight only, just add your keyword to `highlight` option.
 
 ```html
- <p class="mytext">Lorem ipsum dolor sit consectetur amet.</p>
- <h3 class="mytext">Consectetur enim ipsam voluptatem quia</h3>
+<p class="mytext">Lorem ipsum dolor sit consectetur amet.</p>
+<h3 class="mytext">Consectetur enim ipsam voluptatem quia</h3>
 ```
 
-```js
+```html
 <script>
   new HR(".mytext", {
     highlight: "consectetur",
-    backgroundColor:"#B4FFEB"
+    backgroundColor: "#B4FFEB"
   }).hr();
 </script>
 ```
@@ -87,11 +87,11 @@ To highlight only, just add your keyword to `highlight` option.
 These are default options.
 
 ```js
-  new HR("elem", {
-    highlight:null,
-    replaceWith: null,
-    backgroundColor:"#FFDE70"
-  }).hr();
+new HR("elem", {
+  highlight: null,
+  replaceWith: null,
+  backgroundColor: "#FFDE70"
+}).hr();
 ```
 
 
@@ -99,7 +99,7 @@ These are default options.
 
 - IE 11+
 - Chrome 
-- FireFox
+- Firefox
 - Safari
 
 
