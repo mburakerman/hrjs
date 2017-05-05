@@ -101,6 +101,7 @@ new HR("elem", {
 - Chrome 
 - Firefox
 - Safari
+- Opera
 
 
 ## License
