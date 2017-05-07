@@ -1,8 +1,8 @@
 /* HR.js | https://mburakerman.github.io/hrjs/ | @mburakerman | License: MIT */
 
-var HR = function(el, options) {
+var HR = function(el, options = {}) {
   this.el = document.querySelectorAll(el);
-  this.options = options || {};
+  this.options = options;
 }
 
 HR.prototype.defaultOptions = {
