@@ -1,8 +1,8 @@
 /* HR.js | https://mburakerman.github.io/hrjs/ | @mburakerman | License: MIT */
 
-const HR = function(el, options = {}) {
+var HR = function(el, options) {
   this.el = document.querySelectorAll(el);
-  this.options = options;
+  this.options = options || {};
 }
 
 HR.prototype.defaultOptions = {
@@ -13,8 +13,8 @@ HR.prototype.defaultOptions = {
 
 
 HR.prototype.bcolor = function(selector) {
-  let data_hr = selector.querySelectorAll('[data-hr]');
-  for (let i = 0; i < data_hr.length; i++) {
+  var data_hr = selector.querySelectorAll('[data-hr]');
+  for (var i = 0; i < data_hr.length; i++) {
       data_hr[i].style.backgroundColor = this.defaultOptions.backgroundColor;
       if (typeof this.options.backgroundColor !== 'undefined') {
           data_hr[i].style.backgroundColor = this.options.backgroundColor
@@ -24,12 +24,12 @@ HR.prototype.bcolor = function(selector) {
 
 
 HR.prototype.hr = function() {
-  for (let i = 0; i < this.el.length; i++) {
+  for (var i = 0; i < this.el.length; i++) {
 
       if (typeof this.options.replaceWith === 'undefined' && typeof this.options.highlight !== 'undefined') {
 
           if (Array.isArray(this.options.highlight)) {
-              for (let m = 0; m < this.options.highlight.length; m++) {
+              for (var m = 0; m < this.options.highlight.length; m++) {
                   this.el[i].innerHTML = this.el[i].innerHTML.replace(new RegExp("(" + this.options.highlight[m] + ")", 'gi'), '<span data-hr>$1</span>')
               }
           } else {
@@ -42,7 +42,7 @@ HR.prototype.hr = function() {
       if ((typeof this.options.highlight !== 'undefined' && this.options.highlight !== null) && (typeof this.options.replaceWith !== 'undefined' && this.options.replaceWith !== null)) {
 
           if (Array.isArray(this.options.highlight) && Array.isArray(this.options.replaceWith)) {
-              for (let n = 0; n < this.options.highlight.length; n++) {
+              for (var n = 0; n < this.options.highlight.length; n++) {
                   if (typeof this.options.replaceWith[n] !== 'undefined') {
                       this.el[i].innerHTML = this.el[i].innerHTML.replace(new RegExp(this.options.highlight[n], 'gi'), '<span data-hr>' + this.options.replaceWith[n] + '</span>')
                   }
