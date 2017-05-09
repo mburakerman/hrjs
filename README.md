@@ -97,7 +97,7 @@ new HR("elem", {
 
 ## Support
 
-- IE 11
+- IE 10+
 - Chrome 
 - Firefox
 - Safari
