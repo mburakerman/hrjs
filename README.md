@@ -6,6 +6,8 @@
 
 ## Install
 
+`npm install hrjs`
+
 Include hr.js file:
 ```html
 <script src="src/hr.js"></script>
