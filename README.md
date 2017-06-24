@@ -6,7 +6,7 @@
 
 ## Install
 
-`npm install hrjs`
+[![NPM](https://nodei.co/npm/hrjs.png?mini=true)](https://www.npmjs.com/package/hrjs)
 
 Include hr.js file:
 ```html
