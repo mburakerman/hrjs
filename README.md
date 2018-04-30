@@ -14,7 +14,7 @@ Include hr.js file:
 ```
 or use CDN:
 ```html
-<script src="https://rawgit.com/mburakerman/hrjs/master/src/hr.js"></script>
+<script src="https://unpkg.com/hrjs"></script>
 ```
 
 
