@@ -36,7 +36,8 @@ describe('HR.js', () => {
 
     new HR('#test-3', {
       highlight: defaultText.split(' '),
-      replaceWith: replacedText.split(' ')
+      replaceWith: replacedText.split(' '),
+      backgroundColor: 'rgb(0, 255, 235)'
     }).hr()
 
     const testElement = document.getElementById('test-3')

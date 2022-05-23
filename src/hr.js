@@ -1,20 +1,25 @@
 /* HR.js | https://mburakerman.github.io/hrjs/ | @mburakerman | License: MIT */
 /**
   * @param el - The element you want to target.
-  * @param options - This is an object that contains the options for the plugin.
+  * @param options - This is an object that contains the options.
 */
 (function () {
   class HR {
-    constructor (el, options) {
+    constructor (el, options = {}) {
       this.el = document.querySelectorAll(el)
-      this.options = options || {}
+      this.options = options
+      this.defaultOptions = {
+        highlight: null,
+        replaceWith: null,
+        backgroundColor: 'rgb(255, 222, 112)'
+      }
     }
 
     #setBackgroundColor (selector) {
       const dataHR = selector.querySelectorAll('[data-hr]')
       for (let i = 0; i < dataHR.length; i++) {
         dataHR[i].style.backgroundColor = this.defaultOptions.backgroundColor
-        if (typeof this.options.backgroundColor !== 'undefined') {
+        if (this.options?.backgroundColor) {
           dataHR[i].style.backgroundColor = this.options.backgroundColor
         }
       }
@@ -22,7 +27,7 @@
 
     hr () {
       for (let i = 0; i < this.el.length; i++) {
-        if (typeof this.options.replaceWith === 'undefined' && typeof this.options.highlight !== 'undefined') {
+        if (!this.options?.replaceWith && this.options?.highlight) {
           if (Array.isArray(this.options.highlight)) {
             for (let m = 0; m < this.options.highlight.length; m++) {
               this.el[i].innerHTML = this.el[i].innerHTML.replace(new RegExp('(' + this.options.highlight[m] + ')', 'gi'), '<span data-hr>$1</span>')
@@ -34,7 +39,7 @@
           this.#setBackgroundColor(this.el[i])
         }
 
-        if ((typeof this.options.highlight !== 'undefined' && this.options.highlight !== null) && (typeof this.options.replaceWith !== 'undefined' && this.options.replaceWith !== null)) {
+        if ((this.options?.highlight && this.options.highlight !== null) && (this.options?.replaceWith && this.options.replaceWith !== null)) {
           if (Array.isArray(this.options.highlight) && Array.isArray(this.options.replaceWith)) {
             for (let n = 0; n < this.options.highlight.length; n++) {
               if (typeof this.options.replaceWith[n] !== 'undefined') {
@@ -49,12 +54,6 @@
         }
       }
     }
-  }
-
-  HR.prototype.defaultOptions = {
-    highlight: null,
-    replaceWith: null,
-    backgroundColor: 'rgb(255, 222, 112)'
   }
 
   if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
