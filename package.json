@@ -1,0 +1,24 @@
+{
+  "name": "hrjs",
+  "version": "1.0.0",
+  "description": "> Tiny JavaScript plugin for highlighting and replacing text in the DOM",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mburakerman/hrjs.git"
+  },
+  "keywords": [],
+  "author": "mburakerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mburakerman/hrjs/issues"
+  },
+  "homepage": "https://github.com/mburakerman/hrjs#readme",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "jest": "^24.9.0"
+  }
+}
