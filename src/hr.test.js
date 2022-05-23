@@ -2,7 +2,7 @@ const HR = require('./hr.js')
 
 describe('HR.js', () => {
   test('highlight backgroundColor should match', async () => {
-    const defaultText = 'lorem ipsm dolor sit amet.'
+    const defaultText = 'lorem ipsum dolor sit amet.'
     document.body.innerHTML = `<p id="test-1">${defaultText}</p>`
 
     new HR('#test-1', {
