@@ -14,7 +14,7 @@ Include hr.js file:
 ```
 or use CDN:
 ```html
-<script src="https://unpkg.com/hrjs"></script>
+<script src="https://rawgit.com/mburakerman/hrjs/master/src/hr.js"></script>
 ```
 
 
@@ -42,13 +42,7 @@ That's it!
 ![CodePen demo](https://media.giphy.com/media/l4FGuX1VuJFbENUjK/giphy.gif)
 
 
-
-## Test
-Clone project, install dependencies and run `npm run test`
-
-
-
-### Multiple Keywords example
+## Multiple
 
 You can also highlight and replace multiple keywords.
 
@@ -101,6 +95,15 @@ new HR("elem", {
   backgroundColor: "#FFDE70"
 }).hr();
 ```
+
+
+## Support
+
+- IE 10+
+- Chrome 
+- Firefox
+- Safari
+- Opera
 
 
 ## License
