@@ -1,6 +1,6 @@
 {
   "name": "hrjs",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "> Tiny JavaScript plugin for highlighting and replacing text in the DOM",
   "main": "src/hr.min.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "mburakerman",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mburakerman/hrjs/issues"
   },

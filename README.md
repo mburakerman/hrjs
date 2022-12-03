@@ -2,16 +2,19 @@
 
 > Tiny JavaScript plugin for highlighting and replacing text in the DOM
 
+<br />
 
+[![NPM](https://img.shields.io/npm/v/hrjs)](https://www.npmjs.com/package/hrjs)
+![NPM License](https://img.shields.io/npm/l/hrjs)
 
-## Install
+<br />
 
-[![NPM](https://nodei.co/npm/hrjs.png?mini=true)](https://www.npmjs.com/package/hrjs)
+## ⏬ Install
 
-Include hr.js file:
-```html
-<script src="src/hr.js"></script>
+```js
+npm install hrjs
 ```
+
 or use CDN:
 ```html
 <script src="https://unpkg.com/hrjs"></script>
@@ -19,12 +22,11 @@ or use CDN:
 
 
 
-## Usage
+## 🪡 Usage
 
 ```html
 <p id="mytext">Lorem ipsum dolor sit amet.</p>
 ```
-Activate
 
 ```html
 <script>
@@ -43,12 +45,7 @@ That's it!
 
 
 
-## Test
-Clone project, install dependencies and run `npm run test`
-
-
-
-### Multiple Keywords example
+### 🪡 Multiple Keywords example
 
 You can also highlight and replace multiple keywords.
 
@@ -69,7 +66,7 @@ You can also highlight and replace multiple keywords.
 
 
 
-### Highlight example
+### 🪡 Highlight example
 
 To highlight only, just add your keyword to `highlight` option.
 
@@ -89,8 +86,11 @@ To highlight only, just add your keyword to `highlight` option.
 [CodePen Highlight demo](https://codepen.io/anon/pen/Vbampm)
 
 
+## ✅ Test
+Clone project, install dependencies and run `npm run test`
 
-## Customize
+
+## ⚙️ Customize
 
 These are default options.
 
@@ -103,6 +103,6 @@ new HR("elem", {
 ```
 
 
-## License
+## ©️ License
 
 Licensed under the MIT License.
